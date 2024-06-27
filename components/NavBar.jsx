@@ -30,7 +30,20 @@ const NavBar = () => {
         >
           Projects
         </Link>
+        <Link
+          href={"/skills"}
+          className={currentRoute === "/skills" ? activeStyle : nonActiveStyle}
+        >
+          Skills
+        </Link>
+        <Link
+          href={"/about"}
+          className={currentRoute === "/about" ? activeStyle : nonActiveStyle}
+        >
+          About
+        </Link>
       </ul>
+      <div className="bg-blend-darken"></div>
     </nav>
   );
 };
