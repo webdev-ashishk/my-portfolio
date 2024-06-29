@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function SideBar() {
   return (
-    <div className="hidden md:block">
+    <div className="hidden">
       <div className="opacity-60  flex justify-center items-center flex-col gap-10 ml-10 absolute top-80 overflow-visible">
         <svg
           xmlns="http://www.w3.org/2000/svg"

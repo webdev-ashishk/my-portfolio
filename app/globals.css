@@ -34,3 +34,14 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+@media (max-width: 600px) {
+  .about-page {
+    flex-direction: column;
+  }
+  .aboutSection {
+    min-width: 50%;
+    width: 90%;
+    margin-top: 3rem;
+  }
+}
