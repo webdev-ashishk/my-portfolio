@@ -2,7 +2,7 @@ import Image from "next/image";
 import myImage from "../../public/mySelf.jpeg";
 export default function About() {
   return (
-    <div className="about-page fixed w-full h-full flex flex-wrap justify-center items-center border-2">
+    <div className="about-page fixed w-full h-full flex flex-wrap justify-center items-center">
       <div className="imageSection  rounded-lg">
         <Image
           src={myImage}

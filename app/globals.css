@@ -29,6 +29,8 @@ body {
   display: none;
 }
 
+/* nav .nav-items .nav-items-ul .menu-icon */
+
 /* For IE, Edge and Firefox */
 .scrollbar-hide {
   -ms-overflow-style: none; /* IE and Edge */
@@ -40,8 +42,24 @@ body {
     flex-direction: column;
   }
   .aboutSection {
-    min-width: 50%;
-    width: 90%;
-    margin-top: 3rem;
+    /* min-width: 80%; */
+    width: 75%;
+    margin-top: 5rem 0rem;
+  }
+  nav > .nav-bar > .nav-items {
+    display: none;
+  }
+  nav > .nav-bar > .menu {
+    display: block;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  nav > .nav-bar > .nav-items {
+    display: none;
+  }
+  nav > .nav-bar > .menu {
+    display: block;
+    font-size: 2rem;
   }
 }

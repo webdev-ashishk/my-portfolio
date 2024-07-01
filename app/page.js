@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import useDownloader from "react-use-downloader";
-
+import TypewriterComponent from "typewriter-effect";
 export default function Home() {
   const { download } = useDownloader();
   const fileURL =
@@ -13,7 +13,15 @@ export default function Home() {
         <div className="grid place-content-center h-[84vh]">
           <h1 className="text-8xl font-bold">ASHISH KUMAR</h1>
           <div className="flex justify-center items-center">
-            <p class="text-2xl">
+            <p className="text-2xl">
+              <TypewriterComponent
+                options={{
+                  strings: ["Hello I am Frontend developer", "ASHISH KUMAR"],
+                  autoStart: true,
+                  loop: true,
+                }}
+                className="text-blue-400 text-8xl font-bold"
+              />
               An experienced full-stack developer , tech instructor and writer.
               <br></br> I enjoy building web-based applications that leaves a
               lasting impression on users. <br></br>I contribute to Open Source
@@ -28,7 +36,7 @@ export default function Home() {
               target="_blank"
             >
               <button
-                class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-8 border-b-4 border-blue-700 hover:border-blue-500 rounded text-2xl"
+                className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-8 border-b-4 border-blue-700 hover:border-blue-500 rounded text-2xl"
                 onClick={() => download(fileURL, fileName)}
               >
                 Resume
